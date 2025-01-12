@@ -138,6 +138,23 @@ th,td {
 
 }
 
+#goals .column{
+    width: 17.5%;
+    float: left ;
+    margin: 5px;
+    padding: 10px;
+    background-color: white;
+    height: 475px
+    text-align: center;
+}
+
+
+@media screen and (max-width: 600px) {
+    .column img {
+        width: 100%;
+        height: auto;
+    }
+}
 
 
 
