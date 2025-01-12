@@ -66,7 +66,7 @@ nav ul li :hover {
 
 .image-holder {
     width: 2400px;
-    background-color: crimson;
+    background-color: rgba(69, 146, 228, 0.896);
     height: 400px;
     clear: both;
     position:relative ;
@@ -106,4 +106,39 @@ nav ul li :hover {
 #slider-image-3:target ~ .image-holder {
     left: -1600px;
 }
+
+/*table*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table,td,th {
+    border: 5px solid rgb(0, 105, 128);
+}
+
+td {
+    text-align: left;
+    background-color: lightblue;
+}
+
+th {
+    background-color: rgb(0, 105, 128);
+    color: white;
+}
+
+th,td {
+    padding: 16px;
+}
+
+.image-holder img {
+    width: 800px;
+    height: 800px;
+
+}
+
+
+
+
 
