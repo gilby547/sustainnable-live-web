@@ -1,24 +1,29 @@
 body {
     background-color: hsl(216, 87%, 73%);
     font-family: Poppins, sans-serif;
-    
+    margin: 0;
+    padding: 0;
 }
 
 .center {
     text-align: center;
+    margin-bottom: 25px;
 }
 
 .container {
     clear: both;
     overflow: auto;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 nav {
     float: right;
 }
 
-nav a{
- text-decoration: none;
+nav a {
+    text-decoration: none;
     color: black;
 }
 
@@ -28,21 +33,17 @@ nav a{
     font-size: 18px;
 }
 
-nav ul li :hover {
-    color: rgb(0, 225, 255) ;
-}
-
-.container ul li :hover {
-    color: rgb(81, 0, 255) ;
+nav ul li:hover,
+.container ul li:hover {
+    color: rgb(81, 0, 255);
 }
 
 .box {
-    border: 10px dashsed orange;
+    border: 10px dashed rgb(0, 136, 255);
     background-color: white;
     margin: 15px;
     padding: 15px;
     border-radius: 25px;
-
 }
 
 .logo img {
@@ -50,7 +51,6 @@ nav ul li :hover {
     width: 50px;
     height: 50px;
     border-radius: 25px;
-    ;
 }
 
 /*slider*/
@@ -66,10 +66,10 @@ nav ul li :hover {
 
 .image-holder {
     width: 2400px;
-    background-color: rgba(69, 146, 228, 0.896);
+    background-color: rgba(69, 90, 228, 0.896);
     height: 400px;
     clear: both;
-    position:relative ;
+    position: relative;
     transition: left 2s;
 }
 
@@ -82,7 +82,7 @@ nav ul li :hover {
     position: relative;
 }
 
-.buttom-holder {
+.button-holder {
     position: relative;
     top: -20px;
 }
@@ -92,7 +92,7 @@ nav ul li :hover {
     width: 10px;
     height: 10px;
     border-radius: 5px;
-    background-color: brown;
+    background-color: rgb(165, 42, 42);
 }
 
 #slider-image-1:target ~ .image-holder {
@@ -114,7 +114,7 @@ table {
     margin-top: 20px;
 }
 
-table,td,th {
+table, td, th {
     border: 5px solid rgb(0, 105, 128);
 }
 
@@ -128,14 +128,13 @@ th {
     color: white;
 }
 
-th,td {
+th, td {
     padding: 16px;
 }
 
 .image-holder img {
     width: 800px;
     height: 800px;
-
 }
 
 #goals .column {
@@ -144,7 +143,6 @@ th,td {
     padding: 10px;
     height: 475px;
     margin: 5px;
-    padding: 10px;
     background-color: #ffffff;
     text-align: center;
 }
@@ -154,8 +152,78 @@ th,td {
     height: 200px;
 }
 
-.center {
-    margin-bottom: 25px;
+.center-text {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.row img {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.row .content {
+    flex: 1;
+}
+
+.row .content h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.row .content p {
+    margin: 5px 0 0;
+}
+
+.container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.image-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.image-row img {
+    width: 24%; 
+    margin-bottom: 20px;
+    border: 2px solid #ddd; 
+    border-radius: 5px; 
+}
+
+@media screen and (max-width: 768px) {
+    .column {
+        width: 45%;
+        margin: 2.5%;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .row img {
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .column {
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -164,4 +232,3 @@ th,td {
         height: auto;
     }
 }
-
